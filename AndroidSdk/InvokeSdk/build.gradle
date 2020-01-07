@@ -3,14 +3,12 @@ apply plugin: 'com.android.library'
 android {
     compileSdkVersion 28
 
-
     defaultConfig {
         minSdkVersion 21
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
 
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles 'consumer-rules.pro'
     }
 
@@ -25,9 +23,9 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-
-    implementation 'androidx.appcompat:appcompat:1.0.2'
-    testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.0'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+    //lombok
+    compileOnly 'org.projectlombok:lombok:1.18.2'
+    annotationProcessor "org.projectlombok:lombok:1.18.2"
+    // gson
+    implementation 'com.google.code.gson:gson:2.8.5'
 }
