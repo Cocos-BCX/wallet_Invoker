@@ -1,0 +1,382 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3141227323C34774005BEB03 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3141227223C34774005BEB03 /* AppDelegate.m */; };
+		3141227623C34774005BEB03 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3141227523C34774005BEB03 /* ViewController.m */; };
+		3141227923C34774005BEB03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3141227723C34774005BEB03 /* Main.storyboard */; };
+		3141227B23C34775005BEB03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3141227A23C34775005BEB03 /* Assets.xcassets */; };
+		3141227E23C34775005BEB03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3141227C23C34775005BEB03 /* LaunchScreen.storyboard */; };
+		3141228123C34775005BEB03 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3141228023C34775005BEB03 /* main.m */; };
+		3141228A23C46672005BEB03 /* CocosWalletApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 3141228923C46672005BEB03 /* CocosWalletApi.m */; };
+		3141228D23C46723005BEB03 /* CocosRequestObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 3141228C23C46723005BEB03 /* CocosRequestObj.m */; };
+		3141229023C4675A005BEB03 /* CocosResponseObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 3141228F23C4675A005BEB03 /* CocosResponseObj.m */; };
+		3141229323C46EC1005BEB03 /* CocosRequestObj+Private.m in Sources */ = {isa = PBXBuildFile; fileRef = 3141229223C46EC1005BEB03 /* CocosRequestObj+Private.m */; };
+		3141229623C4970B005BEB03 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3141229523C4970B005BEB03 /* SecondViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3141226E23C34774005BEB03 /* WalletInvoker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WalletInvoker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3141227123C34774005BEB03 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3141227223C34774005BEB03 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3141227423C34774005BEB03 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3141227523C34774005BEB03 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3141227823C34774005BEB03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3141227A23C34775005BEB03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3141227D23C34775005BEB03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3141227F23C34775005BEB03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3141228023C34775005BEB03 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3141228823C46672005BEB03 /* CocosWalletApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CocosWalletApi.h; sourceTree = "<group>"; };
+		3141228923C46672005BEB03 /* CocosWalletApi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CocosWalletApi.m; sourceTree = "<group>"; };
+		3141228B23C46723005BEB03 /* CocosRequestObj.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CocosRequestObj.h; sourceTree = "<group>"; };
+		3141228C23C46723005BEB03 /* CocosRequestObj.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CocosRequestObj.m; sourceTree = "<group>"; };
+		3141228E23C4675A005BEB03 /* CocosResponseObj.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CocosResponseObj.h; sourceTree = "<group>"; };
+		3141228F23C4675A005BEB03 /* CocosResponseObj.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CocosResponseObj.m; sourceTree = "<group>"; };
+		3141229123C46EC1005BEB03 /* CocosRequestObj+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CocosRequestObj+Private.h"; sourceTree = "<group>"; };
+		3141229223C46EC1005BEB03 /* CocosRequestObj+Private.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CocosRequestObj+Private.m"; sourceTree = "<group>"; };
+		3141229423C4970B005BEB03 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		3141229523C4970B005BEB03 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3141226B23C34774005BEB03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3141226523C34774005BEB03 = {
+			isa = PBXGroup;
+			children = (
+				3141227023C34774005BEB03 /* WalletInvoker */,
+				3141226F23C34774005BEB03 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3141226F23C34774005BEB03 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3141226E23C34774005BEB03 /* WalletInvoker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3141227023C34774005BEB03 /* WalletInvoker */ = {
+			isa = PBXGroup;
+			children = (
+				3141228723C42813005BEB03 /* walletinvoker */,
+				3141227123C34774005BEB03 /* AppDelegate.h */,
+				3141227223C34774005BEB03 /* AppDelegate.m */,
+				3141227423C34774005BEB03 /* ViewController.h */,
+				3141227523C34774005BEB03 /* ViewController.m */,
+				3141229423C4970B005BEB03 /* SecondViewController.h */,
+				3141229523C4970B005BEB03 /* SecondViewController.m */,
+				3141227723C34774005BEB03 /* Main.storyboard */,
+				3141227A23C34775005BEB03 /* Assets.xcassets */,
+				3141227C23C34775005BEB03 /* LaunchScreen.storyboard */,
+				3141227F23C34775005BEB03 /* Info.plist */,
+				3141228023C34775005BEB03 /* main.m */,
+			);
+			path = WalletInvoker;
+			sourceTree = "<group>";
+		};
+		3141228723C42813005BEB03 /* walletinvoker */ = {
+			isa = PBXGroup;
+			children = (
+				3141228823C46672005BEB03 /* CocosWalletApi.h */,
+				3141228923C46672005BEB03 /* CocosWalletApi.m */,
+				3141228B23C46723005BEB03 /* CocosRequestObj.h */,
+				3141228C23C46723005BEB03 /* CocosRequestObj.m */,
+				3141229123C46EC1005BEB03 /* CocosRequestObj+Private.h */,
+				3141229223C46EC1005BEB03 /* CocosRequestObj+Private.m */,
+				3141228E23C4675A005BEB03 /* CocosResponseObj.h */,
+				3141228F23C4675A005BEB03 /* CocosResponseObj.m */,
+			);
+			path = walletinvoker;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3141226D23C34774005BEB03 /* WalletInvoker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3141228423C34775005BEB03 /* Build configuration list for PBXNativeTarget "WalletInvoker" */;
+			buildPhases = (
+				3141226A23C34774005BEB03 /* Sources */,
+				3141226B23C34774005BEB03 /* Frameworks */,
+				3141226C23C34774005BEB03 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WalletInvoker;
+			productName = WalletInvoker;
+			productReference = 3141226E23C34774005BEB03 /* WalletInvoker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3141226623C34774005BEB03 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "邵银岭";
+				TargetAttributes = {
+					3141226D23C34774005BEB03 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+				};
+			};
+			buildConfigurationList = 3141226923C34774005BEB03 /* Build configuration list for PBXProject "WalletInvoker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3141226523C34774005BEB03;
+			productRefGroup = 3141226F23C34774005BEB03 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3141226D23C34774005BEB03 /* WalletInvoker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3141226C23C34774005BEB03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3141227E23C34775005BEB03 /* LaunchScreen.storyboard in Resources */,
+				3141227B23C34775005BEB03 /* Assets.xcassets in Resources */,
+				3141227923C34774005BEB03 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3141226A23C34774005BEB03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3141227623C34774005BEB03 /* ViewController.m in Sources */,
+				3141228A23C46672005BEB03 /* CocosWalletApi.m in Sources */,
+				3141228D23C46723005BEB03 /* CocosRequestObj.m in Sources */,
+				3141228123C34775005BEB03 /* main.m in Sources */,
+				3141229623C4970B005BEB03 /* SecondViewController.m in Sources */,
+				3141229023C4675A005BEB03 /* CocosResponseObj.m in Sources */,
+				3141227323C34774005BEB03 /* AppDelegate.m in Sources */,
+				3141229323C46EC1005BEB03 /* CocosRequestObj+Private.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3141227723C34774005BEB03 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3141227823C34774005BEB03 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3141227C23C34775005BEB03 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3141227D23C34775005BEB03 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3141228223C34775005BEB03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3141228323C34775005BEB03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3141228523C34775005BEB03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 835CGYZJP6;
+				INFOPLIST_FILE = WalletInvoker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.WalletInvoker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3141228623C34775005BEB03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 835CGYZJP6;
+				INFOPLIST_FILE = WalletInvoker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.WalletInvoker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3141226923C34774005BEB03 /* Build configuration list for PBXProject "WalletInvoker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3141228223C34775005BEB03 /* Debug */,
+				3141228323C34775005BEB03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3141228423C34775005BEB03 /* Build configuration list for PBXNativeTarget "WalletInvoker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3141228523C34775005BEB03 /* Debug */,
+				3141228623C34775005BEB03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3141226623C34774005BEB03 /* Project object */;
+}
