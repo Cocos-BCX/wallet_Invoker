@@ -3,6 +3,8 @@ package com.cocosbcx.invokesdk.dapp_client.model;
 
 import com.cocosbcx.invokesdk.BuildConfig;
 
+import java.io.Serializable;
+
 import lombok.Getter;
 import lombok.Setter;
 
@@ -11,7 +13,7 @@ import lombok.Setter;
  */
 @Setter
 @Getter
-public abstract class BaseInfo {
+public abstract class BaseInfo implements Serializable {
 
     /**
      * 协议
