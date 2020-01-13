@@ -36,7 +36,7 @@ public abstract class BaseInfo implements Serializable {
     private String dappIcon;
 
     /**
-     * 执行的操作类型:transfer,pushTransaction,login,sign
+     * 执行的操作类型:transfer,login, callContract
      */
     private String action;
 

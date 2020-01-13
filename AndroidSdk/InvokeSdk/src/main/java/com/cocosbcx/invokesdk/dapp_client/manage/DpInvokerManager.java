@@ -3,6 +3,7 @@ package com.cocosbcx.invokesdk.dapp_client.manage;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
+import android.util.Log;
 
 import com.cocosbcx.invokesdk.dapp_client.CocosAssistActivity;
 import com.cocosbcx.invokesdk.dapp_client.listener.CocosListener;
@@ -59,14 +60,14 @@ public class DpInvokerManager {
      * 转账
      */
     public void transfer(Context context, Transfer transfer, CocosListener listener) {
-        doAction(context, new Gson().toJson(transfer), transfer.getAction(), listener);
+        doAction(context, transfer.getAction(), new Gson().toJson(transfer), listener);
     }
 
     /**
      * 授权登陆
      */
     public void authorize(Context context, Authorize authorize, CocosListener listener) {
-        doAction(context, new Gson().toJson(authorize), authorize.getAction(), listener);
+        doAction(context, authorize.getAction(), new Gson().toJson(authorize), listener);
     }
 
 
@@ -74,7 +75,7 @@ public class DpInvokerManager {
      * 调用合约
      */
     public void callContract(Context context, Contract contract, CocosListener listener) {
-        doAction(context, new Gson().toJson(contract), contract.getAction(), listener);
+        doAction(context, contract.getAction(), new Gson().toJson(contract), listener);
     }
 
 
@@ -116,6 +117,7 @@ public class DpInvokerManager {
         intent.putExtra("className", CocosAssistActivity.class.getName());
         intent.putExtra("appName", AppHelper.getAppName(context));
         intent.putExtra("action", action);
+        Log.i("actionsss", action);
         //拼凑uri
         intent.setData(getParamUri(param));
         intent.setAction(Intent.ACTION_VIEW);
