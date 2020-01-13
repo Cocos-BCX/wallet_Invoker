@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-package="com.cocosbcx.invokesdk">
+    package="com.cocosbcx.invokesdk">
 
-<application
-    android:allowBackup="true"
-    android:supportsRtl="true">
+    <application
+        android:allowBackup="true"
+        android:supportsRtl="true"
+        android:exported="true">
 
-    <activity
-        android:name="com.cocosbcx.invokesdk.dapp_client.CocosAssistActivity"
-        android:exported="true" />
-
-</application>
+        <activity
+            android:name=".dapp_client.CocosAssistActivity"
+            android:exported="true" />
+    </application>
 
 </manifest>

@@ -3,11 +3,11 @@ package com.cocosbcx.invokesdk.dapp_client.manage;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
-import android.util.Log;
 
 import com.cocosbcx.invokesdk.dapp_client.CocosAssistActivity;
 import com.cocosbcx.invokesdk.dapp_client.listener.CocosListener;
 import com.cocosbcx.invokesdk.dapp_client.model.Authorize;
+import com.cocosbcx.invokesdk.dapp_client.model.BaseResultModel;
 import com.cocosbcx.invokesdk.dapp_client.model.Contract;
 import com.cocosbcx.invokesdk.dapp_client.model.Transfer;
 import com.cocosbcx.invokesdk.helper.AppHelper;
@@ -86,14 +86,13 @@ public class DpInvokerManager {
         if (mListener == null) {
             return;
         }
-        int status = intent.getIntExtra("status", 0);
         String result = intent.getStringExtra("result");
-        if (result == null) {
+        BaseResultModel baseResultModel = new Gson().fromJson(result, BaseResultModel.class);
+        if (baseResultModel == null) {
             mListener.onError("Unknown error");
             return;
         }
-
-        switch (status) {
+        switch (baseResultModel.getCode()) {
             case ERROR:
                 mListener.onError(result);
                 break;
@@ -117,7 +116,6 @@ public class DpInvokerManager {
         intent.putExtra("className", CocosAssistActivity.class.getName());
         intent.putExtra("appName", AppHelper.getAppName(context));
         intent.putExtra("action", action);
-        Log.i("actionsss", action);
         //拼凑uri
         intent.setData(getParamUri(param));
         intent.setAction(Intent.ACTION_VIEW);
