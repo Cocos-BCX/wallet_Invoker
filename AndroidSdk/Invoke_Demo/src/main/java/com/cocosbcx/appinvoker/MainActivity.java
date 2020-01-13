@@ -23,7 +23,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         final TextView result = findViewById(R.id.tv_callback_result);
-        //Authorize
         findViewById(R.id.tv_auth_login).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -110,7 +109,6 @@ public class MainActivity extends AppCompatActivity {
         authorize.setDappName("Newdex");
         authorize.setDappIcon("https://newdex.io/static/logoicon.png");
         authorize.setActionId("web-99784c28-70f0-49ff-3654-f27b137b3502");
-        authorize.setCallbackUrl("https://newdex.io/api/account/walletVerify");
         authorize.setExpired(1537157808L);
         return authorize;
     }
@@ -129,13 +127,12 @@ public class MainActivity extends AppCompatActivity {
         transfer.setPrecision(5);
         transfer.setMemo("test");
         transfer.setExpired(1535944144L);
-        transfer.setCallbackUrl("https://newdex.io/api/account/transferCallback?uuid=1-46e023fc-015b-4b76-3809-1cab3fd76d2c");
         return transfer;
     }
 
 
     /**
-     * 按照协议构建对象 Transfer
+     * 按照协议构建对象 Contract
      */
     private Contract getContract() {
         List list = new ArrayList();
@@ -147,7 +144,6 @@ public class MainActivity extends AppCompatActivity {
         contract.setFunctionName("1.16.13");
         contract.setValueList(list);
         contract.setExpired(1535944144L);
-        contract.setCallbackUrl("https://newdex.io/api/account/transferCallback?uuid=1-46e023fc-015b-4b76-3809-1cab3fd76d2c");
         return contract;
     }
 

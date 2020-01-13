@@ -16,12 +16,6 @@ import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 
 
-/**
- * Author: tp-clement
- * Create: 2018/9/2
- * Desc: TPManager
- */
-
 public class DpInvokerManager {
 
     private static DpInvokerManager sInstance;
@@ -54,10 +48,10 @@ public class DpInvokerManager {
     /**
      * 执行操作
      */
-    private void doAction(Context context, String param, CocosListener listener) {
+    private void doAction(Context context, String action, String param, CocosListener listener) {
         //设置监听器
         setCocosListener(listener);
-        invokeCocosWallet(context, param);
+        invokeCocosWallet(context, action, param);
     }
 
 
@@ -65,14 +59,14 @@ public class DpInvokerManager {
      * 转账
      */
     public void transfer(Context context, Transfer transfer, CocosListener listener) {
-        doAction(context, new Gson().toJson(transfer), listener);
+        doAction(context, new Gson().toJson(transfer), transfer.getAction(), listener);
     }
 
     /**
      * 授权登陆
      */
     public void authorize(Context context, Authorize authorize, CocosListener listener) {
-        doAction(context, new Gson().toJson(authorize), listener);
+        doAction(context, new Gson().toJson(authorize), authorize.getAction(), listener);
     }
 
 
@@ -80,7 +74,7 @@ public class DpInvokerManager {
      * 调用合约
      */
     public void callContract(Context context, Contract contract, CocosListener listener) {
-        doAction(context, new Gson().toJson(contract), listener);
+        doAction(context, new Gson().toJson(contract), contract.getAction(), listener);
     }
 
 
@@ -115,12 +109,13 @@ public class DpInvokerManager {
     /**
      * 拉起CocosWallet
      */
-    private void invokeCocosWallet(Context context, String param) {
+    private void invokeCocosWallet(Context context, String action, String param) {
         Intent intent = new Intent();
         //传递包名、类名、app名
         intent.putExtra("packageName", context.getPackageName());
         intent.putExtra("className", CocosAssistActivity.class.getName());
         intent.putExtra("appName", AppHelper.getAppName(context));
+        intent.putExtra("action", action);
         //拼凑uri
         intent.setData(getParamUri(param));
         intent.setAction(Intent.ACTION_VIEW);

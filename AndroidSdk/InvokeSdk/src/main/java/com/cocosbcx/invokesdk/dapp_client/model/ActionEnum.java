@@ -1,10 +1,5 @@
 package com.cocosbcx.invokesdk.dapp_client.model;
 
-/**
- * Author: tp-clement
- * Create: 2019/4/1
- * Desc: 操作类型
- */
 public enum ActionEnum {
 
     /**

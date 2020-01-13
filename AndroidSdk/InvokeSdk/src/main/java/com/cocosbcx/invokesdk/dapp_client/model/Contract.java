@@ -6,7 +6,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 /**
- * 转账信息
+ * 合约信息
  */
 
 @Setter

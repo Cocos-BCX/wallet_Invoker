@@ -5,9 +5,6 @@ import android.os.Bundle;
 
 import com.cocosbcx.invokesdk.dapp_client.manage.DpInvokerManager;
 
-/**
- * Desc:
- */
 
 public class CocosAssistActivity extends Activity {
 

@@ -52,10 +52,4 @@ public abstract class BaseInfo {
      * 操作描述
      */
     private String desc;
-
-    /**
-     * 回调数据的通过post请求发送到该地址
-     */
-    private String callbackUrl;
-
 }

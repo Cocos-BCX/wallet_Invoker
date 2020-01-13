@@ -7,10 +7,6 @@ import android.util.Base64;
 
 import com.cocosbcx.invokesdk.constant.Constant;
 
-/**
- * @author ningkang.guo
- * @Date 2020/1/7
- */
 public class AppHelper {
 
     /**
