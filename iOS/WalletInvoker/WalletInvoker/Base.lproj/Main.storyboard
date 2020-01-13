@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="js9-AQ-dDq">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--First-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DJL-Oj-e6n">
+                                <rect key="frame" x="147" y="128" width="120" height="44"/>
+                                <color key="backgroundColor" red="0.96078431369999995" green="0.69803921570000005" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Cbi-9U-XCa"/>
+                                    <constraint firstAttribute="width" constant="120" id="zhN-l5-37h"/>
+                                </constraints>
+                                <state key="normal" title="登录">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rv8-8m-5Ls"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Agq-bL-dTd">
+                                <rect key="frame" x="147" y="212" width="120" height="44"/>
+                                <color key="backgroundColor" red="0.96078431369999995" green="0.69803921570000005" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="ct4-bD-JTB"/>
+                                    <constraint firstAttribute="width" constant="120" id="kpf-ch-emf"/>
+                                </constraints>
+                                <state key="normal" title="转账">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="transferBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hSX-pA-5Ex"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xei-Dn-xz4">
+                                <rect key="frame" x="147" y="296" width="120" height="44"/>
+                                <color key="backgroundColor" red="0.96078431369999995" green="0.69803921570000005" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="bJN-hf-b33"/>
+                                    <constraint firstAttribute="width" constant="120" id="h05-8M-ADr"/>
+                                </constraints>
+                                <state key="normal" title="调合约">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="callContractBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w0x-Ok-2GO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m4t-x1-OUT">
+                                <rect key="frame" x="147" y="668" width="120" height="44"/>
+                                <color key="backgroundColor" red="0.52730411827847079" green="0.59661978554294448" blue="0.93838566541671753" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="OXa-bE-h33"/>
+                                    <constraint firstAttribute="height" constant="44" id="jfD-WJ-36D"/>
+                                </constraints>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="callContractBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F7c-zE-Gnp"/>
+                                    <segue destination="Ehy-EF-Hzg" kind="push" id="AZD-dY-eeA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.8551832735401923" green="1" blue="0.92697908990920463" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="Xei-Dn-xz4" firstAttribute="top" secondItem="Agq-bL-dTd" secondAttribute="bottom" constant="40" id="0Rj-aw-ySq"/>
+                            <constraint firstItem="Agq-bL-dTd" firstAttribute="centerX" secondItem="DJL-Oj-e6n" secondAttribute="centerX" id="7Lz-kX-pzL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="m4t-x1-OUT" secondAttribute="bottom" constant="150" id="8IW-jh-rnv"/>
+                            <constraint firstItem="Xei-Dn-xz4" firstAttribute="centerX" secondItem="DJL-Oj-e6n" secondAttribute="centerX" id="Gl2-tE-IXj"/>
+                            <constraint firstItem="Xei-Dn-xz4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Lym-hx-CYf"/>
+                            <constraint firstItem="DJL-Oj-e6n" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QRt-t0-9zs"/>
+                            <constraint firstItem="m4t-x1-OUT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SPQ-Kg-BVf"/>
+                            <constraint firstItem="DJL-Oj-e6n" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="nsp-rG-uXb"/>
+                            <constraint firstItem="Agq-bL-dTd" firstAttribute="top" secondItem="DJL-Oj-e6n" secondAttribute="bottom" constant="40" id="oSC-9m-EW3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="First" id="ab7-rm-myM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="452" y="21"/>
+        </scene>
+        <!--Second-->
+        <scene sceneID="YD0-5Y-DOX">
+            <objects>
+                <viewController id="Ehy-EF-Hzg" customClass="SecondViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YB6-NN-fyS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dTL-Uj-MSW">
+                                <rect key="frame" x="147" y="178" width="120" height="44"/>
+                                <color key="backgroundColor" red="0.96078431369999995" green="0.69803921570000005" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="OaI-YQ-H4L"/>
+                                    <constraint firstAttribute="width" constant="120" id="XUk-KE-emB"/>
+                                </constraints>
+                                <state key="normal" title="登录">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginBtnClick:" destination="Ehy-EF-Hzg" eventType="touchUpInside" id="7dW-TX-GRb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fIT-XI-4Mk">
+                                <rect key="frame" x="147" y="262" width="120" height="44"/>
+                                <color key="backgroundColor" red="0.96078431369999995" green="0.69803921570000005" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="Jew-F6-zvw"/>
+                                    <constraint firstAttribute="height" constant="44" id="MUd-M1-FNt"/>
+                                </constraints>
+                                <state key="normal" title="转账">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="transferBtnClick:" destination="Ehy-EF-Hzg" eventType="touchUpInside" id="VeA-cd-tri"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZCl-0D-qxQ">
+                                <rect key="frame" x="147" y="346" width="120" height="44"/>
+                                <color key="backgroundColor" red="0.96078431369999995" green="0.69803921570000005" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="7UA-wN-2oU"/>
+                                    <constraint firstAttribute="width" constant="120" id="WzI-Xw-GAv"/>
+                                </constraints>
+                                <state key="normal" title="调合约">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="callContractBtnClick:" destination="Ehy-EF-Hzg" eventType="touchUpInside" id="EPJ-WU-DuS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.60814512763153494" green="0.88243958714757731" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="dTL-Uj-MSW" firstAttribute="top" secondItem="seu-eO-N5x" secondAttribute="top" constant="90" id="Au0-Yr-AHQ"/>
+                            <constraint firstItem="ZCl-0D-qxQ" firstAttribute="top" secondItem="fIT-XI-4Mk" secondAttribute="bottom" constant="40" id="N0L-Un-Pmu"/>
+                            <constraint firstItem="fIT-XI-4Mk" firstAttribute="top" secondItem="dTL-Uj-MSW" secondAttribute="bottom" constant="40" id="oga-uE-kzh"/>
+                            <constraint firstItem="dTL-Uj-MSW" firstAttribute="centerX" secondItem="YB6-NN-fyS" secondAttribute="centerX" id="sDZ-5G-kXB"/>
+                            <constraint firstItem="fIT-XI-4Mk" firstAttribute="centerX" secondItem="dTL-Uj-MSW" secondAttribute="centerX" id="xKo-EL-gza"/>
+                            <constraint firstItem="ZCl-0D-qxQ" firstAttribute="centerX" secondItem="dTL-Uj-MSW" secondAttribute="centerX" id="xPW-3J-M1b"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="seu-eO-N5x"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Second" id="4gK-HD-1SF"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cih-MB-LcK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1280" y="30"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="KHf-mR-p9a">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="js9-AQ-dDq" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mdX-Ck-pWN">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="M4D-EA-aZz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NAd-30-yO1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-300" y="13.392857142857142"/>
+        </scene>
+    </scenes>
+</document>
