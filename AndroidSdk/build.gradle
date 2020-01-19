@@ -13,12 +13,15 @@ buildscript {
         // in the individual module build.gradle files
     }
 }
-
+//buildscript里面配置的是gradle构建项目时需要的插件的maven仓库；
+// 而allprojects中是项目依赖库的仓库配置。
 allprojects {
     repositories {
         google()
         jcenter()
-        
+        maven {
+            url rootProject.file('sdk-aar')
+        }
     }
 }
 
