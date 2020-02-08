@@ -38,7 +38,27 @@ static NSString *callback_schema = nil;
 /**  发起 */
 + (BOOL)send:(CocosRequestObj *)obj {
     CocosApiLinkObjCategoryFile();
-    NSDictionary *params = [obj cocos_toJSONObject];
+
+    NSMutableDictionary *params = [obj cocos_toJSONObject].mutableCopy;
+    
+    if ([obj isKindOfClass:CocosLoginObj.class] ) {
+
+    }else if ([obj isKindOfClass:CocosTransferObj.class]) {
+        CocosTransferObj *transferObj = (CocosTransferObj *)obj;
+        params[@"from"] = transferObj.from;
+        params[@"to"] = transferObj.to;
+        params[@"symbol"] = transferObj.symbol;
+        params[@"amount"] = transferObj.amount;
+        params[@"memo"] = transferObj.memo;
+    }else if ([obj isKindOfClass:CocosCallContractObj.class]) {
+        
+        CocosCallContractObj *callContractObj = (CocosCallContractObj *)obj;
+        params[@"param"] = callContractObj.param;
+        params[@"from"] = callContractObj.from;
+        params[@"contract"] = callContractObj.contract;
+        params[@"method"] = callContractObj.method;
+
+    }
     NSString *JSONString = [self toJSONString:params];
     NSString *URLString = [NSString stringWithFormat:@"CocosBCXWallet://%@?%@=%@",obj.action , kReqRespParam, JSONString];
     return [self openURLWithString:URLString];

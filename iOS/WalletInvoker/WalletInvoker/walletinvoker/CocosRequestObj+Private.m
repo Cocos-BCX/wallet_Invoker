@@ -19,6 +19,7 @@ void CocosApiLinkObjCategoryFile(void) {}
     params[@"version"] = self.version;
     params[@"action"] = self.action;
     params[@"dappName"] = self.dappName;
+    params[@"desc"] = self.desc;
     params[@"dappIcon"] = self.dappIcon;
     params[@"callbackSchema"] = self.callbackSchema;
     return params.copy;

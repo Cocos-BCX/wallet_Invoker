@@ -55,7 +55,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @interface CocosTransferObj : CocosRequestObj
 
-@property (nonatomic, copy) NSString *from;                 //!< 付款人的COCOS账号        <optional>
+@property (nonatomic, copy) NSString *from;                 //!< 付款人的COCOS账号        <required>
 @property (nonatomic, copy) NSString *to;                   //!< 收款人的COCOS账号        <required>
 @property (nonatomic, copy) NSString *amount;               //!< 转账数额       <required>
 @property (nonatomic, copy) NSString *symbol;               //!< token的名称           <required>

@@ -23,18 +23,21 @@
 - (IBAction)loginBtnClick:(UIButton *)sender {
     CocosLoginObj *loginObj = [[CocosLoginObj alloc] init];
     loginObj.dappIcon = @"https://gz.bcebos.com/v1/tokenpocket/temp/mobile_sdk_demo.png";
-    loginObj.dappName = @"myDapp";
+    loginObj.dappName = @"Dapp Test";
+    loginObj.desc = @"请求登录的描述信息";
     [CocosWalletApi sendObj:loginObj];
 }
 
 - (IBAction)transferBtnClick:(UIButton *)sender {
     CocosTransferObj *transfer = [[CocosTransferObj alloc] init];
-    transfer.dappName = @"myDapp";
+    transfer.dappName = @"Dapp Test";
     transfer.dappIcon = @"https://gz.bcebos.com/v1/tokenpocket/temp/mobile_sdk_demo.png";
+    transfer.desc = @"请求转账的描述信息";
     transfer.symbol = @"COCOS";
-    transfer.to = @"syling";
-    transfer.memo = @"Memo string...";
+    transfer.to = @"syling1";
+    transfer.memo = @"Memo string xxxooo";
     transfer.amount = @"3";
+    transfer.from = @"syling";
     [CocosWalletApi sendObj:transfer];
 }
 
