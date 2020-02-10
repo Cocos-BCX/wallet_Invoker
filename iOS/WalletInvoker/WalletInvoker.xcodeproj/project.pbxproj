@@ -17,7 +17,6 @@
 		3141228D23C46723005BEB03 /* CocosRequestObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 3141228C23C46723005BEB03 /* CocosRequestObj.m */; };
 		3141229023C4675A005BEB03 /* CocosResponseObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 3141228F23C4675A005BEB03 /* CocosResponseObj.m */; };
 		3141229323C46EC1005BEB03 /* CocosRequestObj+Private.m in Sources */ = {isa = PBXBuildFile; fileRef = 3141229223C46EC1005BEB03 /* CocosRequestObj+Private.m */; };
-		3141229623C4970B005BEB03 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3141229523C4970B005BEB03 /* SecondViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,8 +38,6 @@
 		3141228F23C4675A005BEB03 /* CocosResponseObj.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CocosResponseObj.m; sourceTree = "<group>"; };
 		3141229123C46EC1005BEB03 /* CocosRequestObj+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CocosRequestObj+Private.h"; sourceTree = "<group>"; };
 		3141229223C46EC1005BEB03 /* CocosRequestObj+Private.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CocosRequestObj+Private.m"; sourceTree = "<group>"; };
-		3141229423C4970B005BEB03 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		3141229523C4970B005BEB03 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +75,6 @@
 				3141227223C34774005BEB03 /* AppDelegate.m */,
 				3141227423C34774005BEB03 /* ViewController.h */,
 				3141227523C34774005BEB03 /* ViewController.m */,
-				3141229423C4970B005BEB03 /* SecondViewController.h */,
-				3141229523C4970B005BEB03 /* SecondViewController.m */,
 				3141227723C34774005BEB03 /* Main.storyboard */,
 				3141227A23C34775005BEB03 /* Assets.xcassets */,
 				3141227C23C34775005BEB03 /* LaunchScreen.storyboard */,
@@ -178,7 +173,6 @@
 				3141228A23C46672005BEB03 /* CocosWalletApi.m in Sources */,
 				3141228D23C46723005BEB03 /* CocosRequestObj.m in Sources */,
 				3141228123C34775005BEB03 /* main.m in Sources */,
-				3141229623C4970B005BEB03 /* SecondViewController.m in Sources */,
 				3141229023C4675A005BEB03 /* CocosResponseObj.m in Sources */,
 				3141227323C34774005BEB03 /* AppDelegate.m in Sources */,
 				3141229323C46EC1005BEB03 /* CocosRequestObj+Private.m in Sources */,
