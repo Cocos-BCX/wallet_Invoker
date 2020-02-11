@@ -1,2 +1,4 @@
 # wallet_Invoker
-原生APP跳转工具 
+
+### Android SDK接入文档 
+https://github.com/Cocos-BCX/wallet_Invoker/blob/master/AndroidSdk/README_CN.md 
