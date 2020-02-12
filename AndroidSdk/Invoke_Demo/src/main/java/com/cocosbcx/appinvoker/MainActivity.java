@@ -107,9 +107,7 @@ public class MainActivity extends AppCompatActivity {
     private Authorize getAuthorize() {
         Authorize authorize = new Authorize();
         authorize.setDappName("Newdex");
-        authorize.setDappIcon("https://newdex.io/static/logoicon.png");
         authorize.setActionId("web-99784c28-70f0-49ff-3654-f27b137b3502");
-        authorize.setExpired(1537157808L);
         return authorize;
     }
 
@@ -119,14 +117,13 @@ public class MainActivity extends AppCompatActivity {
     private Transfer getTransfer() {
         Transfer transfer = new Transfer();
         transfer.setDappName("Newdex");
-        transfer.setDappIcon("https://newdex.io/static/logoicon.png");
         transfer.setFrom("gnkhandsome1");
         transfer.setTo("gnkhandsome2");
         transfer.setAmount(0.0001);
         transfer.setSymbol("COCOS");
+        transfer.setActionId("web-99784c28-70f0-49ff-3654-f27b137b3502");
         transfer.setPrecision(5);
         transfer.setMemo("test");
-        transfer.setExpired(1535944144L);
         return transfer;
     }
 
@@ -136,14 +133,13 @@ public class MainActivity extends AppCompatActivity {
      */
     private Contract getContract() {
         List list = new ArrayList();
-        list.add("fasd");
         Contract contract = new Contract();
         contract.setDappName("Newdex");
-        contract.setDappIcon("https://newdex.io/static/logoicon.png");
+        contract.setAuthorizedAccount("gnkhandsome1");
         contract.setContractNameOrId("1.16.13");
+        contract.setActionId("web-99784c28-70f0-49ff-3654-f27b137b3502");
         contract.setFunctionName("1.16.13");
         contract.setValueList(list);
-        contract.setExpired(1535944144L);
         return contract;
     }
 
