@@ -13,7 +13,7 @@
 
 - 打开info.plist 配置如下：（以 dappdemo 为案例）
 
-![URL Schemes](../image/URL Schemes.png)
+![](../image/URL Schemes.png)
 
 
 ### 3. 初始化
