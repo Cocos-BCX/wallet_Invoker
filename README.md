@@ -1,8 +1,8 @@
 # wallet_Invoker
 
-### Android SDK接入文档 
+### Android SDK Access Documentation 
 https://github.com/Cocos-BCX/wallet_Invoker/blob/master/AndroidSdk/README.md 
 
 
-### iOS SDK接入文档 
+### iOS SDK Access Documentation 
 https://github.com/Cocos-BCX/wallet_Invoker/blob/master/iOS/README.md 
