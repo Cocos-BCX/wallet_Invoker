@@ -1,19 +1,15 @@
 ## Android CocosWallet SDK Access Documentation
 
 ### Instructions & Support
-- 该SDK用于拉起CocosWallet钱包，实现Dapp和CocosWallet进行相关action操作的交互。
-- 该SDK仅支持2.1.6及其以上版本的CocosWallet钱包。
--This SDK is used to pull up the CocosWallet wallet and realize the interaction between Dapp and CocosWallet for related action operations.
--The SDK only supports CocosWallet wallets of version 2.1.6 and above.
+-This SDK is used to pull up the CocosWallet wallet and complete the interaction between Dapp and CocosWallet for related action operations.
+-The SDK only supports CocosWallet wallets of version 2.1.6 or above.
 
-### 开始接入Start access
+### Start access
 
-#### 本地maven仓库方式接入Local maven warehouse access
+#### Local maven warehouse access
 
-- 添加sdk-aar文件到项目根目录
-- 项目根目录build.gradle文件添加 mavenUrl
--Add sdk-aar file to the project root directory
--Add mavenUrl to the project root build.gradle file
+- Add sdk-aar file to the project root directory
+- Add mavenUrl to the project root build.gradle file
 
 ```
   allprojects {
@@ -27,14 +23,13 @@
   }
 ```
 
-- 依赖sdk的module,build.gralde文件添加依赖如下
-- Depends on sdk module, build.gralde file adds dependencies as follows
+- module relys on sdk, build.gralde file adds dependencies as follows
 
 ```
 implementation 'com.cocosbcx.invokesdk:InvokeSdk:1.0.0'
 ```
 
-### 使用 Instructions
+### Instructions
 
 ### APIs
 
@@ -45,8 +40,8 @@ implementation 'com.cocosbcx.invokesdk:InvokeSdk:1.0.0'
     authorize.setDappName("DappName"); // dapp name
     authorize.setDappIcon("https://logoicon.png");// dapp icon
     authorize.setActionId("web-99784c28-70f0-49ff-3654-f27b137b3502");// action ID (uuid)
-    authorize.setExpired(1537157808L); // 操作过期时间Operation expiration time
-    authorize.setDesc("desc content"); // 操作描述operation description
+    authorize.setExpired(1537157808L); // Expired time
+    authorize.setDesc("desc content"); // Description
     DpInvokerManager.getInstance().authorize(context,        authorize,new CocosListener() {
         @Override
         public void onSuccess(String data) {
