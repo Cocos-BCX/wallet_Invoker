@@ -40,6 +40,17 @@
         tools:ignore="MissingConstraints" />
 
     <TextView
+        android:id="@+id/tv_call_signMessage"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:text="请求签名"
+        android:textColor="@android:color/white"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
         android:id="@+id/tv_callback_result"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

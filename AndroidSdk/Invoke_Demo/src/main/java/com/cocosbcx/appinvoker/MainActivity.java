@@ -11,6 +11,7 @@ import com.cocosbcx.invokesdk.dapp_client.listener.CocosListener;
 import com.cocosbcx.invokesdk.dapp_client.manage.DpInvokerManager;
 import com.cocosbcx.invokesdk.dapp_client.model.Authorize;
 import com.cocosbcx.invokesdk.dapp_client.model.Contract;
+import com.cocosbcx.invokesdk.dapp_client.model.SignMessage;
 import com.cocosbcx.invokesdk.dapp_client.model.Transfer;
 
 import java.util.ArrayList;
@@ -98,6 +99,30 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        findViewById(R.id.tv_call_signMessage).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                DpInvokerManager.getInstance().signMessage(MainActivity.this, getSignMessage(), new CocosListener() {
+                    @Override
+                    public void onSuccess(String data) {
+                        Toast.makeText(MainActivity.this, data, Toast.LENGTH_SHORT).show();
+                        result.setText(data);
+                    }
+
+                    @Override
+                    public void onError(String data) {
+                        Toast.makeText(MainActivity.this, data, Toast.LENGTH_SHORT).show();
+                        result.setText(data);
+                    }
+
+                    @Override
+                    public void onCancel(String data) {
+                        Toast.makeText(MainActivity.this, data, Toast.LENGTH_SHORT).show();
+                        result.setText(data);
+                    }
+                });
+            }
+        });
 
     }
 
@@ -141,6 +166,19 @@ public class MainActivity extends AppCompatActivity {
         contract.setFunctionName("1.16.13");
         contract.setValueList(list);
         return contract;
+    }
+
+
+
+    /**
+     * 签名字符串
+     */
+    private SignMessage getSignMessage() {
+        SignMessage signMessage = new SignMessage();
+        signMessage.setDappName("Newdex");
+        signMessage.setMessage("gnkhandsome1");
+        signMessage.setActionId("web-99784c28-70f0-49ff-3654-f27b137b3502");
+        return signMessage;
     }
 
 }

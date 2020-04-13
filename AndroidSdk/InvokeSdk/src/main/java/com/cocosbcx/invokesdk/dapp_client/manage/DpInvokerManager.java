@@ -9,6 +9,7 @@ import com.cocosbcx.invokesdk.dapp_client.listener.CocosListener;
 import com.cocosbcx.invokesdk.dapp_client.model.Authorize;
 import com.cocosbcx.invokesdk.dapp_client.model.BaseResultModel;
 import com.cocosbcx.invokesdk.dapp_client.model.Contract;
+import com.cocosbcx.invokesdk.dapp_client.model.SignMessage;
 import com.cocosbcx.invokesdk.dapp_client.model.Transfer;
 import com.cocosbcx.invokesdk.helper.AppHelper;
 import com.google.gson.Gson;
@@ -78,6 +79,13 @@ public class DpInvokerManager {
         doAction(context, contract.getAction(), new Gson().toJson(contract), listener);
     }
 
+    /**
+     * 签名消息
+     */
+    public void signMessage(Context context, SignMessage signMessage, CocosListener cocosListener) {
+        doAction(context, signMessage.getAction(), new Gson().toJson(signMessage), cocosListener);
+    }
+
 
     /**
      * 解析数据，并回调
@@ -144,5 +152,6 @@ public class DpInvokerManager {
         String temp = Dp_SCHEME_HOST + "?param=" + param;
         return Uri.parse(temp);
     }
+
 
 }
