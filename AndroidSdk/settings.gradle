@@ -1,3 +1,2 @@
-include ':Invoke_Demo'
-//        ,':InvokeSdk'
+include ':Invoke_Demo' ,':InvokeSdk'
 rootProject.name='AndroidSdk'
