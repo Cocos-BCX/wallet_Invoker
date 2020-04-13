@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="js9-AQ-dDq">
-    <device id="retina6_1" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="js9-AQ-dDq">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -60,6 +58,20 @@
                                     <action selector="callContractBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w0x-Ok-2GO"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x9O-Tv-1kQ">
+                                <rect key="frame" x="147" y="380" width="120" height="44"/>
+                                <color key="backgroundColor" red="0.96078431369999995" green="0.69803921570000005" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="437-UR-22U"/>
+                                    <constraint firstAttribute="width" constant="120" id="LSN-Qp-eCk"/>
+                                </constraints>
+                                <state key="normal" title="签名">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="signClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WXs-pX-uaQ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.8551832735401923" green="1" blue="0.92697908990920463" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
@@ -68,6 +80,9 @@
                             <constraint firstItem="Xei-Dn-xz4" firstAttribute="centerX" secondItem="DJL-Oj-e6n" secondAttribute="centerX" id="Gl2-tE-IXj"/>
                             <constraint firstItem="Xei-Dn-xz4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Lym-hx-CYf"/>
                             <constraint firstItem="DJL-Oj-e6n" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QRt-t0-9zs"/>
+                            <constraint firstItem="x9O-Tv-1kQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XLI-ho-PIM"/>
+                            <constraint firstItem="Xei-Dn-xz4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="d11-e6-ndX"/>
+                            <constraint firstItem="x9O-Tv-1kQ" firstAttribute="top" secondItem="Xei-Dn-xz4" secondAttribute="bottom" constant="40" id="loa-fH-T3a"/>
                             <constraint firstItem="DJL-Oj-e6n" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="nsp-rG-uXb"/>
                             <constraint firstItem="Agq-bL-dTd" firstAttribute="top" secondItem="DJL-Oj-e6n" secondAttribute="bottom" constant="40" id="oSC-9m-EW3"/>
                         </constraints>
