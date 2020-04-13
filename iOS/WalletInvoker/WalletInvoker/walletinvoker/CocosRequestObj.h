@@ -77,4 +77,16 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 
+#pragma mark - CocosSignStringObj -
+
+/*!
+ * @class CocosSignStringObj
+ * @brief 签名
+ */
+@interface CocosSignStringObj : CocosRequestObj
+
+@property (nonatomic, copy) NSString *from;                 //!< 调用者的COCOS账号        <optional>
+@property (nonatomic, copy) NSString *signContent;               //!< 签名内容        <required>
+@end
+
 NS_ASSUME_NONNULL_END

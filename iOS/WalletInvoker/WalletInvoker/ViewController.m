@@ -20,6 +20,7 @@
     // Do any additional setup after loading the view.
 }
 
+// 登录
 - (IBAction)loginBtnClick:(UIButton *)sender {
     CocosLoginObj *loginObj = [[CocosLoginObj alloc] init];
     loginObj.dappIcon = @"https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1552892908,1688888225&fm=26&gp=0.jpg";
@@ -28,19 +29,21 @@
     [CocosWalletApi sendObj:loginObj];
 }
 
+// 转账
 - (IBAction)transferBtnClick:(UIButton *)sender {
     CocosTransferObj *transfer = [[CocosTransferObj alloc] init];
     transfer.dappName = @"Dapp Test";
     transfer.dappIcon = @"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1581336823814&di=854974e1a9bf2f774add305a7c0d417c&imgtype=0&src=http%3A%2F%2Fimg.jk51.com%2Fimg_jk51%2F78884959.jpeg";
-    transfer.desc = @"请求转账的描述信息";
+    transfer.desc = @"请求转账的描述信息请求转账的描述信息请求转账的描述信息请求转账的描述信息";
     transfer.symbol = @"COCOS";
-    transfer.to = @"syling1";
+    transfer.to = @"syling";
     transfer.memo = @"Memo string xxxooo";
     transfer.amount = @"3";
-    transfer.from = @"syling";
+    transfer.from = @"syling1";
     [CocosWalletApi sendObj:transfer];
 }
 
+// 调合约
 - (IBAction)callContractBtnClick:(UIButton *)sender {
     
     CocosCallContractObj *callContract = [[CocosCallContractObj alloc] init];
@@ -50,8 +53,19 @@
     callContract.from = @"syling";
     callContract.contract = @"contract.testnumber";
     callContract.method = @"hello";
-    callContract.desc = @"请求调用合约的描述信息";
+    callContract.desc = @"请求调用合约的描述信息\n请求调用合约的描述信息\n请求调用合约的描述信息";
     [CocosWalletApi sendObj:callContract];
+}
+
+// 签名
+- (IBAction)signClick:(UIButton *)sender {
+    CocosSignStringObj *signString = [[CocosSignStringObj alloc] init];
+    signString.dappName = @"myDapp";
+    signString.dappIcon = @"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1581336466306&di=86e0f6afdd435ee39dc57fbf7de11d81&imgtype=0&src=http%3A%2F%2F07.imgmini.eastday.com%2Fmobile%2F20180306%2F20180306_1f79b02260b76a95a2a8dfe68ef9fe10.png";
+    signString.from = @"syling2";
+    signString.signContent = @"test";
+    signString.desc = signString.signContent;
+    [CocosWalletApi sendObj:signString];
 }
 
 

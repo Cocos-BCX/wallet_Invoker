@@ -29,7 +29,8 @@ static NSString *callback_schema = nil;
     }
     if ([obj isKindOfClass:CocosLoginObj.class] ||
         [obj isKindOfClass:CocosTransferObj.class]||
-        [obj isKindOfClass:CocosCallContractObj.class]) {
+        [obj isKindOfClass:CocosCallContractObj.class]||
+        [obj isKindOfClass:CocosSignStringObj.class]) {
         return [self send:obj];
     }
     return NO;
@@ -58,6 +59,11 @@ static NSString *callback_schema = nil;
         params[@"contract"] = callContractObj.contract;
         params[@"method"] = callContractObj.method;
 
+    }else if ([obj isKindOfClass:CocosSignStringObj.class]) {
+        
+        CocosSignStringObj *signStringObj = (CocosSignStringObj *)obj;
+        params[@"from"] = signStringObj.from;
+        params[@"signContent"] = signStringObj.signContent;
     }
     NSString *JSONString = [self toJSONString:params];
     NSString *URLString = [NSString stringWithFormat:@"CocosBCXWallet://%@?%@=%@",obj.action , kReqRespParam, JSONString];
