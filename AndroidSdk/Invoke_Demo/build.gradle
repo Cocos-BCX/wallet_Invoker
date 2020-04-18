@@ -22,6 +22,6 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
-//    implementation 'com.cocosbcx.invokesdk:InvokeSdk:1.0.0'
-    implementation project(path: ':InvokeSdk')
+    implementation 'com.cocosbcx.invokesdk:InvokeSdk:1.1.0'
+//    implementation project(path: ':InvokeSdk')
 }
