@@ -3,6 +3,7 @@ package com.cocosbcx.invokesdk.dapp_client.manage;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
+import android.util.Log;
 
 import com.cocosbcx.invokesdk.dapp_client.CocosAssistActivity;
 import com.cocosbcx.invokesdk.dapp_client.listener.CocosListener;
@@ -16,6 +17,8 @@ import com.google.gson.Gson;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
+
+import static com.cocosbcx.invokesdk.constant.Constant.URL_INSTANT_WALLET;
 
 
 public class DpInvokerManager {
@@ -118,6 +121,22 @@ public class DpInvokerManager {
      * 拉起CocosWallet
      */
     private void invokeCocosWallet(Context context, String action, String param) {
+        //判断是否安卓
+        boolean cocosWalletInstall = AppHelper.isCocosWalletInstall(context);
+        if (cocosWalletInstall) {
+            goWallet(context, action, param);//跳转到钱包
+        } else {
+            //没有安装跳转浏览器安装
+            Intent intent = new Intent();
+            intent.setAction("android.intent.action.VIEW");
+            Uri content_url = Uri.parse(URL_INSTANT_WALLET);
+            intent.setData(content_url);
+            context.startActivity(intent);
+        }
+
+    }
+
+    private void goWallet(Context context, String action, String param) {
         Intent intent = new Intent();
         //传递包名、类名、app名
         intent.putExtra("packageName", context.getPackageName());

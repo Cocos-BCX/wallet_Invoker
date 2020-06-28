@@ -28,7 +28,7 @@ public class AppHelper {
     /**
      * 检查CocosWallet钱包是否已安装
      */
-    public boolean isCocosWalletInstall(Context context) {
+    public static boolean isCocosWalletInstall(Context context) {
         try {
             context.getPackageManager().getApplicationInfo(Constant.COCOSBCX_PACKAGE_NAME,
                     PackageManager.GET_UNINSTALLED_PACKAGES);
