@@ -26,7 +26,7 @@
 - module relys on sdk, build.gralde file adds dependencies as follows
 
 ```
-implementation 'com.cocosbcx.invokesdk:InvokeSdk:1.0.0'
+implementation 'com.cocosbcx.invokesdk:InvokeSdk:1.1.1'
 ```
 
 ### Instructions
